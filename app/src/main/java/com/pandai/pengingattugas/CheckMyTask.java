@@ -135,4 +135,8 @@ public class CheckMyTask extends AppCompatActivity {
             }
         });
     }
+
+    public void openAddModifyTask(View view) {
+        startActivity(new Intent(this, AddModifyTask.class));
+    }
 }

@@ -32,7 +32,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="Tugas Baru"
-                    android:textColor="#EC5D5D"
+                    android:textColor="#252323"
                     android:textSize="18dp"
                     android:textStyle="bold"/>
 
@@ -125,7 +125,7 @@
             android:layout_alignParentBottom="true"
             android:layout_gravity="center"
             style="?android:attr/borderlessButtonStyle"
-            android:background="#EC5D5D"
+            android:background="#252323"
             android:textColor="#FFFFFF"
             android:paddingVertical="15dp"
             android:onClick="saveTask"

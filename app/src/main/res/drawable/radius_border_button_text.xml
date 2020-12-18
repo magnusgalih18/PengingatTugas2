@@ -3,6 +3,6 @@
         android:color="#444444" />
 
     <!-- Default color -->
-    <item android:color="#EC5D5D" />
+    <item android:color="#252323" />
 
 </selector>
