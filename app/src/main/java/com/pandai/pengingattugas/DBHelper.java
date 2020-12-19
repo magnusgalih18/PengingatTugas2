@@ -42,7 +42,6 @@ public class DBHelper extends SQLiteOpenHelper {
         ContentValues contentValues = new ContentValues();
         contentValues.put("task", task);
         contentValues.put("task_at", task_at);
-        //contentValues.put("dateStr", getDate(dateStr));
         contentValues.put("status", 0);
         db.insert(TABLE_NAME, null, contentValues);
         return true;

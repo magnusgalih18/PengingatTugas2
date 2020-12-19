@@ -87,27 +87,27 @@ public class AddModifyTask extends AppCompatActivity {
 
     public void saveTask(View v) {
 
-        /*Checking for Empty Task*/
+        /*Check Empty Task*/
         if (edit_text.getText().toString().trim().length() > 0) {
 
             if (isModify) {
                 mydb.updateTask(task_id, edit_text.getText().toString(), new SimpleDateFormat("yyyy-MM-dd").format(calendar.getTime()));
-                Toast.makeText(getApplicationContext(), "Task Updated.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Tugas Berhasil Diupdate.", Toast.LENGTH_SHORT).show();
             } else {
                 mydb.insertTask(edit_text.getText().toString(), new SimpleDateFormat("yyyy-MM-dd").format(calendar.getTime()));
-                Toast.makeText(getApplicationContext(), "Task Added.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Tugas Berhasil Ditambahkan.", Toast.LENGTH_SHORT).show();
             }
             finish();
 
         } else {
-            Toast.makeText(getApplicationContext(), "Empty task can't be saved.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Tugas Masih Kosong tidak dapat disimpan.", Toast.LENGTH_SHORT).show();
         }
 
     }
 
     public void deleteTask(View v) {
         mydb.deleteTask(task_id);
-        Toast.makeText(getApplicationContext(), "Task Removed", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Tugas berhasil Dihapus", Toast.LENGTH_SHORT).show();
         finish();
     }
 
